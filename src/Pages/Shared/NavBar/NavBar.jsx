@@ -3,13 +3,13 @@
 const NavBar = () => {
     const navLinks = <>
     <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
+    <details className="dropdown">
+  <summary className="m-1 ">open or close</summary>
+  <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+    <li><a>Item 1</a></li>
+    <li><a>Item 2</a></li>
+  </ul>
+</details>
                             <li><a>Item 3</a></li>
     
     </>
