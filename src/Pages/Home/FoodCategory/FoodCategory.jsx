@@ -13,10 +13,17 @@ import img5 from '../../../assets/home/slide5.jpg';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
+import Sectiontitle from '../../../Components/SectionTitle/Sectiontitle';
 
 const FoodCategory = () => {
     return (
-        <Swiper
+        <div>
+          <Sectiontitle subHeading={"From 11:00am to 10:00pm"}
+          
+          Heading={"ORDER ONLINE"}>
+            
+          </Sectiontitle>
+          <Swiper
         slidesPerView={4}
         spaceBetween={0}
         pagination={{
@@ -36,6 +43,7 @@ const FoodCategory = () => {
         
         
       </Swiper>
+        </div>
     );
 };
 
